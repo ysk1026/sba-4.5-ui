@@ -5,9 +5,20 @@ import { Nav } from 'react-router-dom'
 const UserLogin = () => {
     const [userid, setUserid] = useState()
     const [userpw, setUserpw] = useState()
+    // const userData = {
+    //     userid : userid, 
+    //     userpw // key, value 값이 같으면 생략 가능
+    // }
     const login = e => {
         e.preventDefault()
         alert(`로그인 아이디: ${userid}, 비밀번호 ${userpw}`)
+        axios.post(``, {userid, userpw}) // 위에 주석처리 된 코드와 같은 내용, 바깥은 상수로 정의한거고 지금은 바로 써버린 것
+            .then(res => {
+                alert('Success')
+            })
+            .catch(error => {
+                alert('Fail')
+            })
     }
     const cancel = e => {
         e.preventDefault()
