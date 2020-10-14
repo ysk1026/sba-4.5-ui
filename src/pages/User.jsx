@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-import { UserRead, UserMenu, UserRegister, UserRemove, UserUpdate } from '../components/user'
+import { UserLogin, UserMenu, UserRegister, UserRemove, UserUpdate } from '../components/user'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 const User = () => <>
@@ -25,7 +25,7 @@ const User = () => <>
         <UserMenu/>
         <Switch>
             <Route path='/userregister' component={UserRegister}></Route>
-            <Route path='/userread' component={UserRead}></Route>
+            <Route path='/userlogin' component={UserLogin}></Route>
             <Route path='/userremove' component={UserRemove}></Route>
             <Route path='/userupdate' component={UserUpdate}></Route>
         </Switch>

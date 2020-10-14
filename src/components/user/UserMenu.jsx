@@ -9,7 +9,7 @@ const UserMenu = () => (
           <Link to="/userregister">UserRegister</Link>
         </li>
         <li>
-          <Link to="/userread">UserRead</Link>
+          <Link to="/userlogin">UserLogin</Link>
         </li>
         <li>
           <Link to="/userupdate">UserUpdate</Link>
