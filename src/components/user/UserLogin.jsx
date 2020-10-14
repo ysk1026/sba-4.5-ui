@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
+import axios from 'axios'
 import { Nav } from 'react-router-dom'
 
 const UserLogin = () => {
-    const login = () => {
-        alert("로그인 버튼 클릭")
+    const [userid, setUserid] = useState()
+    const [userpw, setUserpw] = useState()
+    const login = e => {
+        e.preventDefault()
+        alert(`로그인 아이디: ${userid}, 비밀번호 ${userpw}`)
     }
-    const cancel = () => {
-        alert("캔슬 버튼 클릭")
+    const cancel = e => {
+        e.preventDefault()
+        alert(`취소 버튼 클릭 !{}`)
     }
 
     return (<>
@@ -14,11 +19,11 @@ const UserLogin = () => {
     <table>
         <tr>
             <td>ID</td>
-            <td><input type="text"/></td>
+            <td><input type="text" onChange={e => setUserid(`${e.target.value}`)}/></td>
         </tr>
         <tr>
             <td>Password</td>
-            <td><input type="text"/></td>
+            <td><input type="text" onChange={e => setUserpw(`${e.target.value}`)}/></td>
         </tr>
         <tr>
             <td colSpan='2'>
