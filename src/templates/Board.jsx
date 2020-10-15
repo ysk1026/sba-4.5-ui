@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoardMenu, BoardRead, BoardRegister, BoardUpdate, BoardRemove } from '../components/board'
+// import { BoardMenu, BoardRead, BoardRegister, BoardUpdate, BoardRemove } from '../components/board'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import { Nav } from '../components'
@@ -19,7 +19,7 @@ const Board = () => <>
         </ul>
     </div> */}
     <h1>Board</h1>
-    <Router>
+    {/* <Router>
         <BoardMenu/>
         <Switch>
             <Route path ="/boardregister" component={BoardRegister}></Route>
@@ -27,7 +27,7 @@ const Board = () => <>
             <Route path ="/boardupdate" component={BoardUpdate}></Route>
             <Route path ="/boardremove" component={BoardRemove}></Route>
         </Switch>
-    </Router>
+    </Router> */}
     {/* <Nav/> */}
 </>
 

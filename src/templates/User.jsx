@@ -1,9 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
-import { UserLogin, UserMenu, UserRegister, UserRemove, UserUpdate } from '../components/user'
+// import { NavLink } from 'react-router-dom'
+// import { UserLogin, UserMenu, UserRegister, UserRemove, UserUpdate } from '../container/user'
+import {UserMenu as Menu} from '../components'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
-const User = () => <>
+const User = ({children}) => <>
     {/* <div>
         <ul>
             <li>
@@ -21,7 +22,9 @@ const User = () => <>
     {/* <h1>User</h1> */}
     {/* <Nav/> */}
     <h1>User</h1>
-    <Router>
+    <Menu/>
+    ({children})
+    {/* <Router>
         <UserMenu/>
         <Switch>
             <Route path='/userregister' component={UserRegister}></Route>
@@ -29,7 +32,7 @@ const User = () => <>
             <Route path='/userremove' component={UserRemove}></Route>
             <Route path='/userupdate' component={UserUpdate}></Route>
         </Switch>
-    </Router>
+    </Router> */}
 </>
 
 export default User

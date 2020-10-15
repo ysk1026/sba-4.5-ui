@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import { User } from '../../templates'
 import { Nav } from 'react-router-dom'
 
 const UserLogin = () => {
@@ -25,7 +26,7 @@ const UserLogin = () => {
         alert(`취소 버튼 클릭 !{}`)
     }
 
-    return (<>
+    return (<User>
     <h1>로그인</h1>
     <table>
         <tr>
@@ -44,6 +45,6 @@ const UserLogin = () => {
             
         </tr>
     </table>
-    </>)
+    </User>)
     }
 export default UserLogin
