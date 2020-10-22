@@ -28,7 +28,7 @@ const UserLogin = () => {
 
     return (<User>
     <h1>로그인</h1>
-    <table>
+    <table className="tab_layer">
         <tr>
             <td>ID</td>
             <td><input type="text" onChange={e => setUserid(`${e.target.value}`)}/></td>

@@ -1,0 +1,9 @@
+table, th, tr, td {
+    border: 1px solid rgb(197, 149, 149);
+    margin: 0 auto;
+}
+
+.tab_layer {
+    width: 1000px;
+    height: 600px;
+}

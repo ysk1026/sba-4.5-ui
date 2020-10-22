@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import { Nav } from '../components'
+import './table.style.css'
 
 const Board = () => <>
     {/* <div>

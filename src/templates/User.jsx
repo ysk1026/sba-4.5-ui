@@ -3,7 +3,7 @@ import React from 'react';
 // import { UserLogin, UserMenu, UserRegister, UserRemove, UserUpdate } from '../container/user'
 import {UserMenu as Menu} from '../components'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-
+import './table.style.css'
 const User = ({children}) => <>
     {/* <div>
         <ul>
@@ -23,7 +23,7 @@ const User = ({children}) => <>
     {/* <Nav/> */}
     <h1>User</h1>
     <Menu/>
-    ({children})
+    {children}
     {/* <Router>
         <UserMenu/>
         <Switch>

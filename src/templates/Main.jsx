@@ -4,6 +4,7 @@ import Item from './Item';
 import User from './User';
 import Board from './Board';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import './table.style.css'
 
 const Main = () => <>
     <BrowserRouter>
