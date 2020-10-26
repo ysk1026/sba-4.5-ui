@@ -19,6 +19,9 @@ const UserMenu = () => (
         <li>
           <Link to="/userremove">UserRemove</Link>
         </li>
+        <li>
+          <Link to="/userlist">User List</Link>
+        </li>
       </ol>
     </nav>
   </>

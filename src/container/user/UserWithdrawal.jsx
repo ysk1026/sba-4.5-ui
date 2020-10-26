@@ -6,7 +6,7 @@ const UserWithdrawal = () => {
         <h1>UserWithdrawal</h1>
         <table>
             <tr>
-                <td></td>
+                <td>회원 탈퇴</td>
                 <td></td>
             </tr>
             <tr>

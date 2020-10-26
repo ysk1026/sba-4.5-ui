@@ -10,16 +10,22 @@ const UserLogin = () => {
     //     userid : userid, 
     //     userpw // key, value 값이 같으면 생략 가능
     // }
-    const login = e => {
+    const login = e => 
         e.preventDefault()
-        alert(`로그인 아이디: ${userid}, 비밀번호 ${userpw}`)
-        axios.post(``, {userid, userpw}) // 위에 주석처리 된 코드와 같은 내용, 바깥은 상수로 정의한거고 지금은 바로 써버린 것
+        axios.post(`http://localhost:8080/api/access`, {userid, password})
             .then(res => {
-                alert('Success')
+                alert(`Welcome ! ${res.data["name"]}.  ${res.data["userid"]}'s connection is successful. ! `)
+    
+                sessionStorage.setItem("sessionUser", res.data['userid']);
+                window.location.reload()
+                history.push("/home");
+                    
             })
             .catch(error => {
-                alert('Fail')
+                alert("Please check your ID or password.");
+                window.location.reload();
             })
+    
     }
     const cancel = e => {
         e.preventDefault()
